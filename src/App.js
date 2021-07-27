@@ -51,12 +51,17 @@ function App() {
           <Route path="/logout">
             <Logout />
           </Route>
-          <Route path="/:page">
-            <Page />
+          <Route path="/home" exact>
+            <Home />
           </Route>
           <Route path="/" exact>
             <Home />
           </Route>
+          <Route path="/:page">
+            <Page />
+          </Route>
+          
+          
           
         </Switch>
         <Footer/>

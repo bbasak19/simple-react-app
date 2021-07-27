@@ -1,11 +1,11 @@
  let default_data = {
-    logo:{src:'/images/logo.png', url:"#"},
+    logo:{src:'images/logo.png', url:"#"},
     menu:[
         {id:1, name:"Home", url:"/", class:"active"},
     ],
     banner:[
-        {image:"/images/banner_1.jpg", title:"Banner 1 title", desc:"Banner 1 desc"},
-        {image:"/images/banner_2.jpg", title:"Banner 2 title", desc:"Banner 2 desc"},
+        {image:"images/banner_1.jpg", title:"Banner 1 title", desc:"Banner 1 desc"},
+        {image:"images/banner_2.jpg", title:"Banner 2 title", desc:"Banner 2 desc"},
     ],
     content:{
         title:"Welcome Title here",
