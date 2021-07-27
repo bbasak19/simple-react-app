@@ -1,0 +1,55 @@
+.react-modal-wrap,
+.react-modal-wrap * {
+  box-sizing: border-box;
+}
+.react-modal-wrap {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 15px;
+  text-align: left;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 999;
+}
+.react-modal-wrap.on {
+  opacity: 1;
+}
+.react-modal-inner {
+  max-width: 1100px;
+  background: #fff;
+  margin: 0 auto;
+  opacity: 0;
+  margin-top: -50px;
+  transition: all 0.3s;
+}
+.react-modal-wrap.on .react-modal-inner {
+  opacity: 1;
+  margin-top: 0;
+}
+.react-modal-titlebar {
+  padding: 10px 38px 10px 15px;
+  border-bottom: 1px solid #999;
+  position: relative;
+  font-size: 16px;
+}
+.react-modal-titlebar-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  color: #999;
+  text-align: center;
+  line-height: 38px;
+  cursor: pointer;
+}
+.react-modal-body {
+  padding: 8px 15px;
+}
+
