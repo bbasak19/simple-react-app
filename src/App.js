@@ -8,7 +8,7 @@ import {
 import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { add_default_data } from './redux/state_slices/counter/counterSlice';
-import { onLoginSuccess, onLogout } from './redux/state_slices/admin/adminSlice';
+import { onLoginSuccess } from './redux/state_slices/admin/adminSlice';
 
 //include comnponents
 import Logo from './components/frontend/Logo'; 
@@ -38,7 +38,7 @@ function App() {
   //Add default value for data or site objects
 
   return (
-    <Router>
+    <Router basename="/simple-react-app">
       <div className="App">
         <header className="site-header">
           <Logo />
